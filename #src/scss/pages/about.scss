@@ -1,0 +1,170 @@
+.about-page {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__head {
+        margin-bottom: 45px;
+    }
+
+    &__big {
+        text-align: center;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 122%;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    &__body {
+        max-width: 750px;
+        margin: 0 auto;
+        width: 100%;
+
+        &_text {
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        &_list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &_item {
+            width: 45%;
+            margin-bottom: 25px;
+
+            &_val {
+                font-size: 60px;
+                line-height: 60px;
+                font-weight: 700;
+                padding: 10px 0;
+            }
+
+            &_name {    
+                font-weight: 700;
+                padding: 10px 0;
+                border-top: 1px solid #000;
+            }
+        }
+    }
+
+    &__team {
+
+        &_slider {
+            width: 100%;
+
+            &_sl {
+
+                &_img {
+                    height: 266px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: flex;
+                    }
+                }
+
+                &_descr {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px 0;
+                    line-height: 24px;
+                    &_name {
+                        margin-bottom: 5px;
+                        text-align: center;
+                    }
+
+                    &_pos {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    &__atm {
+        padding: 50px 0;
+
+        &_head {
+            margin-bottom: 45px;
+        }
+
+        &_body {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        &_slider {
+            margin: 0 auto 0 0;
+            width: 85%;
+            overflow: visible;
+            &_sl {
+                height: 460px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-page {
+
+        &__in {
+            padding: 25px 0;
+        }
+
+        &__head {
+            display: none;
+            margin-bottom: 25px;
+        }
+
+        &__big {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 122%;
+            text-align: left;
+        }
+
+        &__body {
+            &_list {
+
+            }
+
+            &_item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__team {
+            overflow: hidden;
+            &_slider {
+                width: 70%;
+                margin: 0 auto 0 0;
+                overflow: visible;
+            }
+        }
+
+        &__atm {
+
+            &_head {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: $brown;
+    transition: all .7s ease-in-out;
+    transform: translateY(-100%);
+    color: #fff;
+    padding-top: 75px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 100%;
+        background-color: $brown;
+        border-radius: 0;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 0;
+        background-color: #fff;
+    }  
+
+    &__in {
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+    }
+
+    &__part {
+        width: calc(100% / 3.2);
+        
+        &_item {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            &_link {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 57px;
+                margin-right: 20px;
+            }
+
+            &_arrow {
+                width: 20px;
+                height: 20px;
+                flex: 0 0 auto;
+                cursor: pointer;
+                background-image: url('../img/icons/arrow-bottom.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                transform: rotate(180deg);
+                @include def-anim;
+            }
+
+            &_arrow.active {
+                transform: rotate(0);
+            }
+        }
+
+        &_submenu {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            @include def-anim;
+
+
+            &_item {
+                margin-bottom: 10px;
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+    }
+}
+
+.menu.active {
+
+    transform: translateY(0);
+
+    
+}
+
+@media (max-width: 768px) {
+    .menu {
+        padding-top: 125px;
+        overflow-y: auto;
+        &__in {
+            flex-wrap: wrap;
+        }
+
+        &__part {
+            width: 100%;
+        }
+    }
+}

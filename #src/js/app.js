@@ -1,4 +1,7 @@
+import { aboutPageSlider } from './modules/aboutPageSlider.js';
 import { aboutSlider } from './modules/aboutSlider.js';
+import { atmSlider } from './modules/atmSlider.js';
+import { burgerMenu } from './modules/burgerMenu.js';
 import { clientSlider } from './modules/clientSlider.js';
 import * as flsFuncs from './modules/functions.js';
 import { heroSlider } from './modules/heroSlider.js';
@@ -15,4 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     servSlider();
     clientSlider();
     onlineSlider();
+    burgerMenu();
+    aboutPageSlider();
+    atmSlider();
 })
