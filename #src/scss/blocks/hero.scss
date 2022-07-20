@@ -1,0 +1,211 @@
+.hero {
+    width: 100%;
+
+    &__slider {
+        position: relative;
+        width: 100%;
+
+        &_wr {
+            
+        }
+
+        &_sl {
+            
+            height: 580px;
+            position: relative;
+
+            &_img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: flex;
+                }
+            }
+
+            &_content {
+                position: relative;
+                z-index: 2;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                max-width: 1000px;
+                margin: 0 auto;
+                width: 100%;
+                &_body {
+                    height: 100%;
+                    max-width: 500px;
+                    width: 100%;
+                    background: rgba(43, 42, 40, 0.6);
+                    padding: 25px;
+                    color: #fff;
+                }
+
+                &_head {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 130%;
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+
+                &_date {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-bottom: 20px;
+                }
+
+                &_text {
+                    margin-bottom: 20px;
+                }
+
+                &_link {
+                    text-transform: uppercase;
+                    padding: 10px 30px;
+                    @include def-anim;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #fff;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: $text;
+                    }
+                }
+            }
+        }
+
+        &_nav {
+            width: 33px;
+            height: 33px;
+            border-radius: 100%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include def-anim;
+            position: absolute;
+            z-index: 3;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            img {
+                display: flex;
+            }
+        }
+
+        &_nav-prev {
+            top: calc(50% - (33px / 2));
+            left: 30px;
+        }
+
+        &_nav-next {
+            top: calc(50% - (33px / 2));
+            right: 30px;
+        }
+
+        &_pag {
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            &_el {
+                position: static;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &_item {
+                    height: 3px;
+                    width: 100%;
+                    margin: 0 12px;
+                    background: #AEAEAE;
+                    @include def-anim;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                &_item.active {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        &__slider {
+
+            &_sl {
+                height: 515px;
+
+                &_img {
+
+                }
+
+                &_content {
+                    align-items: flex-end;
+                    padding-bottom: 55px;
+
+                    &_head {
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
+
+                    &_date {
+                        font-size: 12px;
+                        line-height: 12px;
+                        margin-bottom: 15px;
+                    }
+
+                    &_text {
+                        font-size: 14px;
+                        line-height: 130%;
+                    }
+
+                    &_link {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &_nav {
+                display: none;
+            }
+
+            &_pag {
+                bottom: 20px;
+
+                &_el {
+
+                    &_item {
+                        height: 2px;
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,136 @@
+.promo {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__head {
+        margin-bottom: 45px;
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+
+        &_item {
+            width: calc((100% / 2) - 20px);
+            margin: 0 10px;
+            margin-bottom: 50px;
+            display: block;
+            &:hover {
+                .promo__body_item_img {
+
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+                .promo__body_item_descr {
+
+                    &_link {
+                        .arrow-link {
+
+                            &__icon {
+                                transform: translateX(15px);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_img {
+                height: 340px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: flex;
+                    @include def-anim;
+                }
+            }
+            &_descr {
+                padding: 24px 0;
+
+                &_head {
+                    font-size: 22px;
+                    line-height: 26px;
+                    margin-bottom: 20px;
+                }
+
+                &_data {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 12px;
+                    margin-bottom: 20px;
+                }
+
+                &_text {
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .promo {
+
+        &__in {
+
+        }
+
+        &__body {
+            margin-left: 0;
+            margin-right: 0;
+            &_item {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .promo {
+
+        &__body {
+
+            &_item {
+
+                &_img {
+                    height: 270px;
+                }
+
+                &_descr {
+                    padding: 10px 0;
+
+                    &_head {
+                        font-size: 18px;
+                        line-height: 24px;
+                        margin-bottom: 6px;
+                    }
+
+                    &_data {
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 12px;
+                        margin-bottom: 10px;
+                    }
+
+                    &_text {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

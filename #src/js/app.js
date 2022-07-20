@@ -1,0 +1,18 @@
+import { aboutSlider } from './modules/aboutSlider.js';
+import { clientSlider } from './modules/clientSlider.js';
+import * as flsFuncs from './modules/functions.js';
+import { heroSlider } from './modules/heroSlider.js';
+import { onlineSlider } from './modules/onlineSlider.js';
+import { servSlider } from './modules/servSlider.js';
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    flsFuncs.isWebp();
+
+    heroSlider();
+    aboutSlider();
+    servSlider();
+    clientSlider();
+    onlineSlider();
+})

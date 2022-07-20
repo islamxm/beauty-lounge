@@ -1,0 +1,131 @@
+.serv {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__head {
+        margin-bottom: 10px;
+    }
+
+    &__subhead {
+        margin-bottom: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__body {
+
+        &_slider {
+            padding-bottom: 50px;
+
+            &_scrollbar {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                &_el {
+                    position: static;
+                    max-width: 680px;
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 4px;
+                    background-color: 
+                    #C4C4C4;
+                    z-index: 10;
+                }
+
+                .swiper-scrollbar-drag {
+                    background-color: $text;
+                    border-radius: 0;
+                }
+            }
+            &_sl {
+                @include def-anim;
+
+                &:hover {
+                    background-color: $text;
+                    .serv__body_slider_sl_name {
+                        color: #fff;
+                    }
+
+                    .serv__body_slider_sl_img {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                &_img {
+                    width: 100%;
+                    height: 335px;
+                    background-color: #000;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: flex;
+                        @include def-anim;
+                    }
+                }
+
+                &_name {
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 122%;
+                    text-transform: uppercase;
+                    @include def-anim;
+                    padding: 15px 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .serv {
+        
+        &__in {
+            padding: 25px 0;
+            position: relative;
+        }
+
+        &__head {
+
+        }
+
+        &__subhead {
+            margin-bottom: 25px;
+        }
+
+        &__body {
+            overflow: hidden;
+            &_slider {
+                margin: 0 auto 0 0;
+                width: 75%;
+                overflow: visible;
+                position: static !important;
+
+                &_sl {
+
+                    &_img {
+                        height: 310px;
+                    }
+
+                    &_name {
+                        font-size: 18px;
+                        line-height: 22px;
+
+                    }
+                }
+
+                &_scrollbar {
+                    bottom: 40px;
+                }
+            }
+        }
+    }
+}

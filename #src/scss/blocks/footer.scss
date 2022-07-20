@@ -1,0 +1,188 @@
+.footer {
+    background-color: $brown;
+    color: #fff;
+    &__top {
+        padding: 20px 0;
+        border-bottom: 1px solid #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_title {
+            text-align: left;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 122%;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #F9FBFA;
+        }
+
+        &_link {
+            display: flex;
+            align-items: center;
+
+            &_name {
+                font-size: 16px;
+                line-height: 122%;
+                text-align: center;
+                text-transform: uppercase;
+                padding-right: 60px;
+                border-right: 1px solid #fff;
+                
+            }
+
+            &_icon {
+                width: 73px;
+                height: 10px;
+                background-image: url('../img/icons/link-arrow-white.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                margin-left: 40px;
+            }
+        }   
+
+    }
+
+    &__mid {
+
+        &_main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0;
+
+            &_nav {
+                display: flex;
+                align-items: center;
+                margin-right: 25px;
+                flex-wrap: wrap;
+
+                &_item {
+                    margin-right: 20px;
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            &_soc {
+                display: flex;
+                align-items: center;
+
+                &_item {
+                    margin-right: 30px;
+                    font-size: 18px;
+                    line-height: 171.5%;
+                    text-transform: uppercase;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        &_ex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #FFFFFF;
+        }
+    }
+
+    &__bottom {
+        padding: 22px 0;
+        font-size: 18px;
+        line-height: 18px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+
+        &__top {
+            flex-wrap: wrap;
+            border: none;
+            &_title {
+                width: 100%;
+                text-align: center;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #FFFFFF;
+            }
+
+            &_link {
+                width: 100%;
+                justify-content: center;
+                padding: 15px 0;
+
+                &_name {
+                    width: 50%;
+                    padding-right: 0;
+                    font-size: 14px;
+                    line-height: 122%;
+
+                    span {
+                        display: none;
+                    }
+                }
+
+                &_icon {
+                    width: 50%;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &__mid {
+
+            &_main {
+                flex-wrap: wrap;
+
+                &_nav {
+                    width: 100%;
+                    margin-right: 0;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    &_item {
+                        width: 48%;
+                        padding-right: 0;
+                        margin-right: 0;
+                    }
+                }
+
+                &_soc {
+                    flex-wrap: wrap;
+
+                    &_item {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+
+            &_ex {
+                flex-wrap: wrap;
+
+                &_license {
+                    order: 1;
+                    margin-bottom: 35px;
+                }
+
+                &_policy {
+                    order: 2;
+                }
+            }
+        }
+
+        &__bottom {
+            text-align: center;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}

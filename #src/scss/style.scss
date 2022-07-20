@@ -1,0 +1,24 @@
+//LIBS
+@import './libs/swiper';
+
+@import './fonts';
+
+
+@import './global/vars';
+@import './global/global';
+
+@import './comps/arrow-link';
+
+@import './blocks/header';
+@import './blocks/footer';
+@import './blocks/hero';
+@import './blocks/about';
+@import './blocks/serv';
+@import './blocks/client';
+@import './blocks/online';
+@import './blocks/promo';
+
+@import './pages/news';
+@import './pages/client';
+@import './pages/serv';
+@import './pages/news-item';

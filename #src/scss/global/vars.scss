@@ -1,0 +1,7 @@
+$text: #222222;
+$brown: #2B2A28;
+
+
+@mixin def-anim {
+    transition: all .3s ease;
+}

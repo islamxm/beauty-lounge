@@ -1,0 +1,117 @@
+.online {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__head {
+        margin-bottom: 20px;
+    }
+
+    &__subhead {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+
+    &__body {
+
+        &_slider {
+
+            &_sl {
+                &:hover {
+                    .online__body_slider_sl_img {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                &_img {
+                    overflow: hidden;
+                    height: 480px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: flex;
+                        @include def-anim;
+                    }
+                }
+
+                &_descr {
+                    padding: 20px 0;
+
+                    &_top {
+                        margin-bottom: 5px;
+                    }
+
+                    &_name {
+                        font-size: 22px;
+                        line-height: 24px;
+                        margin-bottom: 10px;
+                    }
+
+                    &_price {
+                        font-size: 14px;
+                        line-height: 12px;
+                        font-weight: 700;
+                        display: flex;
+                        align-items: center;
+
+                        &_old {
+                            color: #A1A1A1;
+                            text-decoration: line-through;
+                        }
+
+                        &_new {
+                            font-size: 16px;
+                            line-height: 18px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .online {
+
+        &__in {
+            padding: 25px 0;
+        }
+
+        &__head {
+
+        }
+
+        &__subhead {
+            margin-bottom: 25px;
+        }
+
+        &__body {
+
+            &_slider {
+                margin: 0 auto 0 0;
+                width: 75%;
+                overflow: visible;
+
+                &_sl {
+
+                    &_img {
+                        height: 350px;
+                    }
+
+                    &_descr {
+
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

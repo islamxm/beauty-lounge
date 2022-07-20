@@ -1,0 +1,126 @@
+.client {
+    background-color: $brown;
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__head {
+        margin-bottom: 50px;
+    }
+
+    &__body {
+
+        &_slider {
+
+            &_wr {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+            &_slide {
+                color: #fff;
+                width: calc((100% / 4) - 20px);
+                margin: 0 10px;
+                margin-bottom: 20px;
+                &:hover {
+                    .client__body_slider_slide_img {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                &_img {
+                    height: 480px;
+                    background-color: $text;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: flex;
+                        @include def-anim;
+                    }
+                }
+
+                &_descr {
+                    padding: 20px 0;
+
+                    &_name {
+                        font-size: 22px;
+                        line-height: 24px;
+
+                    }
+                }
+            }
+
+        
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .client {
+
+        &__body {
+
+            &_slider {
+
+
+                &_slide {
+                    width: calc((100% / 3) - 20px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .client {
+
+        &__in {
+            padding: 25px 0;
+        }
+
+        &__head {
+            margin-bottom: 25px;
+        }
+
+        &__body {
+
+            &_slider {
+
+                &_slide {
+                    width: calc((100% / 2) - 20px);
+
+                    &_img {
+                        height: 250px;
+                    }
+
+                    &_descr {
+                        padding: 10px 0;
+
+                        &_name {
+                            font-size: 18px;
+                            line-height: 24px;
+                            margin-bottom: 10px;
+                        }
+
+                        &_date {
+                            font-size: 12px;
+                            line-height: 12px;
+                            margin-bottom: 10px;
+                        }
+
+                        &_text {
+                            font-size: 12px;
+                            line-height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
