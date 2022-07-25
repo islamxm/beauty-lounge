@@ -4,6 +4,7 @@ import { atmSlider } from './modules/atmSlider.js';
 import { burgerMenu } from './modules/burgerMenu.js';
 import { clientSlider } from './modules/clientSlider.js';
 import * as flsFuncs from './modules/functions.js';
+import { gallery } from './modules/gallery.js';
 import { heroSlider } from './modules/heroSlider.js';
 import { onlineSlider } from './modules/onlineSlider.js';
 import { servSlider } from './modules/servSlider.js';
@@ -21,4 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
     burgerMenu();
     aboutPageSlider();
     atmSlider();
+    gallery();
 })
