@@ -13,6 +13,18 @@ export const burgerMenu = () => {
 
     if(menuItems.length > 0) {
         menuItems.forEach(item => {
+            if(!item.classList.contains('active')) {
+                if(item.querySelector('.menu__part_item_arrow')) {
+                    let submenu = item.querySelector('.menu__part_submenu');
+                    submenu.style.cssText = `height: 0px`;
+                }
+            }
+            if(item.classList.contains('active')) {
+                if(item.querySelector('.menu__part_item_arrow')) {
+                    let submenu = item.querySelector('.menu__part_submenu');
+                    submenu.style.cssText = `height: ${submenu.scrollHeight}px`;
+                }
+            }
             item.addEventListener('click', (event) => {
                 if(event.target.classList.contains('menu__part_item_arrow')) {
                     event.target.classList.toggle('active');

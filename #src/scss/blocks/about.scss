@@ -135,6 +135,11 @@
 
         &__in {
             padding: 25px 0;
+            padding-top: 40px;
+        }
+
+        &__head {
+            margin-bottom: 20px;
         }
 
         &__body {
@@ -150,14 +155,22 @@
                     font-size: 18px;
                     line-height: 122%;
                     order: 1;
+                    
                 }
 
                 &_list {
                     order: 2;
+                    justify-content: space-between;
                 }
 
                 &_item {
+                    flex-wrap: wrap;
+                    width: 48%;
+                    &_icon {
+                        margin-bottom: 10px;
+                    }
                     &_descr {
+                        width: 100%;
                         font-size: 14px;
                         line-height: 18px;
                     }
@@ -171,7 +184,7 @@
 
                 &_link {
                     order: 4;
-                    justify-content: center;
+                    
 
                     &_text {
                         font-size: 12px;

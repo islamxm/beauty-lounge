@@ -1,11 +1,15 @@
-import Swiper, {Navigation, Pagination, EffectFade} from 'swiper';
+import Swiper, {Navigation, Pagination, EffectFade, Autoplay} from 'swiper';
 
 export const heroSlider = () => {
     const el = document.querySelector('.hero__slider');
 
     if(el) {
         const slider = new Swiper(el, {
-            modules:[Navigation, Pagination, EffectFade],
+            modules:[Navigation, Pagination, EffectFade, Autoplay],
+            autoplay: {
+                delay: 4000,
+            },
+            speed: 2700,
             navigation: {
                 prevEl: ".hero__slider_nav-prev",
                 nextEl: ".hero__slider_nav-next"
@@ -17,10 +21,11 @@ export const heroSlider = () => {
                 bulletClass: 'hero__slider_pag_el_item',
                 bulletActiveClass: 'active'
             },
-            effect: 'fade',
-            fadeEffect: {
-                crossFade: true
-            },
+            loop: true,
+            // effect: 'fade',
+            // fadeEffect: {
+            //     crossFade: true
+            // },
         })
     }
     

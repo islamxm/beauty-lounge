@@ -7,3 +7,21 @@
         color: #fff;
     }
 }
+
+@media (max-width: 768px) {
+
+    .news-page {
+
+        .promo {
+
+            &__in {
+                padding: 25px 0;
+            }
+
+            &__head {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+

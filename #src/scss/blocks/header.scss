@@ -38,7 +38,7 @@
         a {
             color: #fff;
             font-weight: 700;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 130%;
             text-transform: uppercase;
             display: flex;
@@ -112,7 +112,7 @@
         &__list {
             order: 3;
             border-top: 1px solid #fff;
-            margin-top: 10px;
+            margin-top: 20px;
             padding: 20px 0;
             padding-bottom: 0;
         }
@@ -120,6 +120,11 @@
         &__item {
             width: calc(100% / 3);
             padding: 0;
+
+            a {
+                font-size: 12px;
+                white-space: nowrap;
+            }
 
             &:last-child {
                 border-right: none;

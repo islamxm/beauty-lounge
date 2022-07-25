@@ -41,7 +41,7 @@
                 width: 100%;
                 &_body {
                     height: 100%;
-                    max-width: 500px;
+                    max-width: 650px;
                     width: 100%;
                     background: rgba(43, 42, 40, 0.6);
                     padding: 25px;
@@ -58,7 +58,7 @@
 
                 &_date {
                     font-weight: 700;
-                    font-size: 18px;
+                    font-size: 16px;
                     line-height: 22px;
                     margin-bottom: 20px;
                 }
@@ -75,6 +75,7 @@
                     align-items: center;
                     justify-content: center;
                     border: 1px solid #fff;
+                    font-size: 14px;
 
                     &:hover {
                         background-color: #fff;
@@ -169,15 +170,20 @@
                     align-items: flex-end;
                     padding-bottom: 55px;
 
+                    &_body {
+                        padding: 60px 25px;
+                    }
+
                     &_head {
                         font-size: 18px;
                         line-height: 23px;
+                        margin-bottom: 10px;
                     }
 
                     &_date {
                         font-size: 12px;
                         line-height: 12px;
-                        margin-bottom: 15px;
+                        margin-bottom: 10px;
                     }
 
                     &_text {
@@ -187,6 +193,7 @@
 
                     &_link {
                         width: 100%;
+                        font-size: 12px;
                     }
                 }
             }

@@ -36,3 +36,13 @@
         background-image: url('../img/icons/link-arrow-dark.svg');
     }
 }
+
+@media (max-width: 768px) {
+
+    .arrow-link {
+
+        &__text {
+            font-size: 12px;
+        }
+    }
+}

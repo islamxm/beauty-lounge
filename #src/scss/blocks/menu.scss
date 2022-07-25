@@ -12,6 +12,15 @@
     padding-top: 75px;
     overflow-y: auto;
     overflow-x: hidden;
+
+
+    display: flex;
+    flex-direction: column;
+
+    .container {
+        flex: 1 0 auto;
+    }
+
     &::-webkit-scrollbar {
         width: 4px;
         height: 100%;
@@ -73,8 +82,8 @@
 
             &_item {
                 margin-bottom: 10px;
-                font-size: 18px;
-                line-height: 32px;
+                font-size: 16px;
+                line-height: 18px;
             }
         }
     }

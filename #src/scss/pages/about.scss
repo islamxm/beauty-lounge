@@ -93,6 +93,7 @@
 
     &__atm {
         padding: 50px 0;
+        padding-bottom: 0;
 
         &_head {
             margin-bottom: 45px;
@@ -157,6 +158,13 @@
                 width: 70%;
                 margin: 0 auto 0 0;
                 overflow: visible;
+
+                &_sl {
+                    
+                    &_img {
+                        height: 350px;
+                    }
+                }
             }
         }
 

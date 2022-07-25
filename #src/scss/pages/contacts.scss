@@ -38,10 +38,25 @@
             margin: 0 50px;
             margin-bottom: 10px;
             height: 45px;
-            background-color: $brown;
+            border: 1px solid $brown;
             display: flex;
             align-items: center;
             justify-content: center;
+            @include def-anim;
+
+            &:hover {
+                background-color: $brown;
+                .contacts-page__body_item_icon {
+                    svg {
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
+                .contacts-page__body_item_text {
+                    color: #fff;
+                }
+            }
 
             &_icon {
                 width: 28px;
@@ -50,16 +65,20 @@
                 margin-right: 10px;
                 flex: 0 0 auto;
 
-                img {
+                svg {
                     width: 100%;
                     height: 100%;
-                    object-fit: contain;
-                    display: flex;
+
+                    path {
+                        @include def-anim;
+                        fill: $brown;
+                    }
                 }
             }
 
             &_text {
-                color :#fff;
+                color :$brown;
+                @include def-anim;
             }
         }
 
@@ -135,10 +154,43 @@
                 margin-right: 0;
             }
 
+            &_item.google {
+                order: 1;
+            }
+
+            &_item.yandex {
+                order: 2;
+            }
+
+            &_item.whatsapp {
+                order: 3;
+            }
+
+            &_item.telegram {
+                order: 4;
+            }
+
+            &_item.email {
+                order: 5;
+            }
+
             &_item {
                 width: 100%;
                 margin: 0;
                 margin-bottom: 15px;
+                background-color: $brown;
+
+                .contacts-page__body_item_icon {
+
+                    svg {
+                        path{
+                            fill: #fff;
+                        }
+                    }
+                }
+                .contacts-page__body_item_text {
+                    color :#fff;
+                }
             }
 
             &_ex {
@@ -159,6 +211,23 @@
                         padding: 15px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .contacts-page {
+
+        &__body {
+
+            &_list {
+
+            }
+
+            &_item {
+                justify-content: flex-start;
+                padding: 0 30px;
             }
         }
     }

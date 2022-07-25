@@ -50,7 +50,33 @@
             }
 
             &_text {
+                margin-bottom: 20px;
+            }
 
+            &_action {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                
+                &_btn {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: $brown;
+                    @include def-anim;
+                    border: 1px solid $brown;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    line-height: 19px;
+                    padding: 10px 50px;
+
+                    &:hover {
+                        background-color: $brown;
+                        color: #fff;
+                    }
+                }
+
+                
             }
         }
     }
@@ -102,6 +128,35 @@
 
                 &_date {
                     display: none;
+                }
+
+                &_action {
+
+                    &_btn {
+
+                        background-color: $brown;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 420px) {
+    .news-item {
+
+        &__body {
+
+            &_content {
+
+                &_action {
+
+                    &_btn {
+                        width: 100%;
+                        padding: 10px;
+                    }
                 }
             }
         }
