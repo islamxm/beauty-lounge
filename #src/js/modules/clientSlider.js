@@ -6,8 +6,19 @@ export const clientSlider = () => {
 
     if(el) {
         const slider = new Swiper(el, {
+            slidesPerView: 1,
             spaceBetween: 20,
-            slidesPerView: 4,
+            breakpoints: {
+                1000: {
+                    spaceBetween: 20,
+                    slidesPerView: 4,
+                },
+                620: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+                
+            }
         })
     }
 }

@@ -14,16 +14,16 @@
         &_slider {
 
             &_wr {
-                display: flex;
-                flex-wrap: wrap;
-                margin-left: -10px;
-                margin-right: -10px;
+                // display: flex;
+                // flex-wrap: wrap;
+                // margin-left: -10px;
+                // margin-right: -10px;
             }
             &_slide {
                 color: #fff;
-                width: calc((100% / 4) - 20px);
-                margin: 0 10px;
-                margin-bottom: 20px;
+                // width: calc((100% / 4) - 20px);
+                // margin: 0 10px;
+                // margin-bottom: 20px;
                 &:hover {
                     .client__body_slider_slide_img {
                         img {
@@ -51,7 +51,12 @@
                     &_name {
                         font-size: 20px;
                         line-height: 24px;
+                        margin-bottom: 20px;
 
+                    }
+
+                    &_date {
+                        margin-bottom: 20px;
                     }
                 }
             }
