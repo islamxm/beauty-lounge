@@ -1,0 +1,19 @@
+.services-qt {
+    background-color: $brown;
+    color: #fff;
+
+
+    &__in {
+        padding: 35px 0;
+    }
+
+    &__body {
+        text-align: center;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 122%;
+        max-width: 820px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

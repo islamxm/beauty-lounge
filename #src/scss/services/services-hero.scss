@@ -1,0 +1,75 @@
+.services-hero {
+    background-color: $brown;
+    &__in  {
+        padding: 80px 0;
+        color: #fff;
+    }
+
+    &__title {
+        max-width: 850px;
+        width: 100%;
+        margin: 0 auto;
+        
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        max-width: 850px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        text-align: center;
+        font-size: 25px;
+        line-height: 150%;
+    }
+
+    &__subtitle {
+        max-width: 850px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 122%;
+        margin-bottom: 45px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &_item {
+            width: 165px;
+            margin: 0 15px;
+
+            &_img {
+                width: 165px;
+                height: 165px;
+                border-radius: 100%;
+                margin-bottom: 20px;
+                overflow: hidden;
+
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: flex;
+                }
+            }
+
+            &_name {
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 122%;
+            }
+        }
+    }
+
+
+}
