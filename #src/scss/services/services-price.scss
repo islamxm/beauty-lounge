@@ -1,7 +1,7 @@
 .services-price {
 
     &__in {
-        padding: 50px
+        padding: 50px 0;
     }
 
     &__head {
@@ -11,8 +11,65 @@
     }
 
     &__body {
+        &_item.is-active {
 
+            .ac-header {
+                background-color: #E3E3E3;
+            }
+        }
         &_item {
+            border: none;
+            border-top: 1px solid #222222;
+            font-family: 'CenturyGothic' !important;
+            
+            &_head {
+                transition: all .3s ease;
+                .ac-trigger {
+                    font: inherit !important;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 122%;
+                    text-transform: uppercase;
+                    padding: 24px 10px;
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            &_panel {
+
+                &_content {
+
+                    .table {
+                        width: 100%;
+
+                        &__row {
+
+                        }
+
+                        &__row-head {
+
+                        }
+
+                        &__item {
+                            text-align: left;
+                            padding: 10px 10px;
+                            text-transform: uppercase;
+
+                            &:first-child {
+                                width: 60%;
+                            }
+                        }
+
+                        &__item.table__head {
+                            font-weight: 600;
+                            padding: 20px 10px;
+                        }
+                    }
+                }
+            }
             
         }
     }

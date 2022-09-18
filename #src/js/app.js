@@ -7,6 +7,7 @@ import * as flsFuncs from './modules/functions.js';
 import { gallery } from './modules/gallery.js';
 import { heroSlider } from './modules/heroSlider.js';
 import { onlineSlider } from './modules/onlineSlider.js';
+import servAcc from './modules/servAcc.js';
 import { servSlider } from './modules/servSlider.js';
 
 
@@ -23,4 +24,5 @@ document.addEventListener('DOMContentLoaded', () => {
     aboutPageSlider();
     atmSlider();
     gallery();
+    servAcc()
 })

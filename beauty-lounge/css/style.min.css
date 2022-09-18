@@ -2567,3 +2567,48 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+.services-price__in {
+  padding: 50px 0;
+}
+.services-price__head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.services-price__body_item.is-active .ac-header {
+  background-color: #E3E3E3;
+}
+.services-price__body_item {
+  border: none;
+  border-top: 1px solid #222222;
+  font-family: "CenturyGothic" !important;
+}
+.services-price__body_item_head {
+  transition: all 0.3s ease;
+}
+.services-price__body_item_head .ac-trigger {
+  font: inherit !important;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  text-transform: uppercase;
+  padding: 24px 10px;
+}
+.services-price__body_item_head .ac-trigger::after {
+  display: none;
+}
+.services-price__body_item_panel_content .table {
+  width: 100%;
+}
+.services-price__body_item_panel_content .table__item {
+  text-align: left;
+  padding: 10px 10px;
+  text-transform: uppercase;
+}
+.services-price__body_item_panel_content .table__item:first-child {
+  width: 60%;
+}
+.services-price__body_item_panel_content .table__item.table__head {
+  font-weight: 600;
+  padding: 20px 10px;
+}
