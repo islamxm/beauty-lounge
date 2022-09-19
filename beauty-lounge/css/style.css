@@ -1825,6 +1825,65 @@ body {
     width: 100%;
   }
 }
+.fill.dark {
+  margin-bottom: 0;
+}
+.fill.dark:after {
+  background-color: #fff;
+}
+.fill.dark .fill__wr {
+  background-color: #2B2A28;
+}
+.fill.dark .fill__btn {
+  border: 1px solid #fff;
+}
+
+.fill {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.fill:after {
+  position: absolute;
+  top: calc(50% - 0.5px);
+  height: 1px;
+  width: 100%;
+  content: "";
+  background-color: #2B2A28;
+}
+.fill__wr {
+  padding: 0 50px;
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+}
+.fill__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2B2A28;
+  padding: 10px 50px;
+}
+.fill__btn_text {
+  margin-left: 15px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .fill:after {
+    display: none;
+  }
+  .fill__wr {
+    padding: 0 15px;
+    width: 100%;
+  }
+  .fill__btn {
+    padding: 10px;
+    width: 100%;
+  }
+}
 .news-page {
   background-color: #2B2A28;
   height: 100%;
@@ -2392,6 +2451,31 @@ body {
   line-height: 122%;
 }
 
+@media (max-width: 768px) {
+  .services-hero__in {
+    padding: 40px 0;
+  }
+  .services-hero__title {
+    font-size: 30px;
+    line-height: 130%;
+    margin-bottom: 25px;
+  }
+  .services-hero__text {
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 15px;
+  }
+  .services-hero__subtitle {
+    font-size: 30px;
+    line-height: 130%;
+  }
+  .services-hero__list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+}
 .services-serv {
   background-color: #2B2A28;
   color: #fff;
@@ -2431,6 +2515,11 @@ body {
   border: 2px solid #fff;
   margin-right: 10px;
   flex: 0 0 auto;
+}
+@media (max-width: 768px) {
+  .services-serv__body_item {
+    width: 100%;
+  }
 }
 .services-wr {
   color: #fff;
@@ -2491,6 +2580,26 @@ body {
   line-height: 122%;
 }
 
+@media (max-width: 768px) {
+  .services-wr__body_brands {
+    margin-bottom: 25px;
+  }
+  .services-wr__body_brands_item {
+    height: auto;
+    margin-bottom: 40px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .services-wr__body_content {
+    flex-wrap: wrap;
+  }
+  .services-wr__body_content_img {
+    width: 100%;
+  }
+  .services-wr__body_content_descr {
+    width: 100%;
+  }
+}
 .services-sec__in {
   padding: 80px 0;
 }
@@ -2531,6 +2640,27 @@ body {
   line-height: 122%;
 }
 
+@media (max-width: 768px) {
+  .services-sec__in {
+    padding: 40px 0;
+  }
+  .services-sec__head {
+    margin-bottom: 25px;
+  }
+  .services-sec__text {
+    margin-bottom: 30px;
+  }
+  .services-sec__list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+  .services-sec__item {
+    width: 295px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+}
 .services-pr__in {
   padding: 80px 0;
 }
@@ -2551,6 +2681,17 @@ body {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .services-pr__in {
+    padding: 40px 0;
+  }
+  .services-pr__head {
+    margin-bottom: 25px;
+  }
+  .services-pr__body_item {
+    width: 50%;
+  }
+}
 .services-qt {
   background-color: #2B2A28;
   color: #fff;
@@ -2568,6 +2709,14 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .services-qt__in {
+    padding: 40px 0;
+  }
+  .services-qt__body {
+    font-size: 18px;
+  }
+}
 .services-price__in {
   padding: 50px 0;
 }
@@ -2647,6 +2796,22 @@ body {
   margin-left: 15px;
 }
 
+@media (max-width: 768px) {
+  .services-price__action {
+    margin-bottom: 20px;
+  }
+  .services-price__action:after {
+    display: none;
+  }
+  .services-price__action_wr {
+    padding: 0 15px;
+    width: 100%;
+  }
+  .services-price__action_btn {
+    padding: 10px;
+    width: 100%;
+  }
+}
 .services-team__in {
   padding: 70px 0;
 }
@@ -2682,4 +2847,20 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+}
+
+@media (max-width: 768px) {
+  .services-team__in {
+    padding: 40px 0;
+  }
+  .services-team__head {
+    margin-bottom: 25px;
+  }
+  .services-team__head_subhead {
+    margin-right: 0px;
+  }
+  .services-team__body_slider {
+    overflow: visible;
+    width: 90%;
+  }
 }

@@ -6,8 +6,21 @@ const teamSlider = () => {
 
     if(el) {
         const slider = new Swiper(el, {
-            slidesPerView: 5,
-            spaceBetween: 10
+            
+            spaceBetween: 10,
+            breakpoints: {
+                1000: {
+                    slidesPerView: 5,
+                },
+                768: {
+                    slidesPerView: 3
+                },
+
+                550: {
+                    slidesPerView: 2,
+                },
+                
+            }
         })
     }
 }

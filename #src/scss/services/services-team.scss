@@ -52,3 +52,30 @@
         }
     }
 }
+
+@media(max-width: 768px) {
+    .services-team {
+
+        &__in {
+            padding: 40px 0;
+        }
+
+        &__head {
+            margin-bottom: 25px;
+
+            &_subhead {
+                margin-right: 0px;
+            }
+        }
+
+        &__body {
+
+            &_slider {
+
+                overflow: visible;
+
+                width: 90%;
+            }
+        }
+    }
+}

@@ -24,3 +24,23 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .services-pr {
+        &__in {
+            padding: 40px 0;
+
+        }
+
+        &__head {
+            margin-bottom: 25px;
+        }
+
+        &__body {
+
+            &_item {
+                width: 50%;
+            }
+        }
+    }
+}

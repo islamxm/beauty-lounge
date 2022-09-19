@@ -67,3 +67,33 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .services-wr {
+
+        &__body {
+
+            &_brands {
+                margin-bottom: 25px;
+
+                &_item {
+                    height: auto;
+                    margin-bottom: 40px;
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+            }
+
+            &_content {
+                flex-wrap: wrap;
+
+                &_img {
+                    width: 100%;
+                }
+                &_descr {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -73,3 +73,38 @@
 
 
 }
+
+
+@media (max-width: 768px) {
+
+    .services-hero {
+
+        &__in {
+            padding: 40px 0;
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 130%;
+            margin-bottom: 25px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 150%;
+            margin-bottom: 15px;
+        }
+
+        &__subtitle {
+            font-size: 30px;
+            line-height: 130%;
+        }
+
+        &__list {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            justify-content: flex-start;
+            padding-bottom: 10px;
+        }
+    }
+}

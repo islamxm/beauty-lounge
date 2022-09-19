@@ -113,3 +113,24 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .services-price {
+
+        &__action {
+            margin-bottom: 20px;
+            &:after {
+                display: none;
+            }
+            &_wr {
+                padding: 0 15px;
+                width: 100%;
+            }
+
+            &_btn {
+                padding: 10px;
+                width: 100%;
+            }
+        }
+    }
+}

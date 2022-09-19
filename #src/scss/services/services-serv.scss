@@ -48,3 +48,15 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .services-serv {
+
+        &__body {
+
+            &_item {
+                width: 100%;
+            }
+        }
+    }
+}

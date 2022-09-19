@@ -17,3 +17,16 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: 768px) {
+    .services-qt {
+
+        &__in {
+            padding: 40px 0;
+            
+        }
+        &__body {
+            font-size: 18px;
+        }
+    }
+}
