@@ -9,6 +9,7 @@ import { heroSlider } from './modules/heroSlider.js';
 import { onlineSlider } from './modules/onlineSlider.js';
 import servAcc from './modules/servAcc.js';
 import { servSlider } from './modules/servSlider.js';
+import teamSlider from './modules/teamSlider.js';
 
 
 
@@ -24,5 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     aboutPageSlider();
     atmSlider();
     gallery();
-    servAcc()
+    servAcc();
+    teamSlider();
 })

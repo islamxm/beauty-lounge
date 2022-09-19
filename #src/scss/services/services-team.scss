@@ -1,0 +1,54 @@
+.services-team {
+
+    &__in {
+        padding: 70px 0;
+    }
+
+    &__head {
+        margin-bottom: 60px;
+        &_title {
+            margin-bottom: 25px;
+        }
+
+        &_subhead {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: -250px;
+        }
+    }
+
+    &__body {
+
+        &_slider {
+
+            &_sl {
+
+                &_img {
+                    height: 265px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: flex;
+                    }
+                }
+                &_body {
+                    padding: 10px;
+
+                    &_pr {
+                        text-align: center;
+                    }
+
+                    &_name {
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+
+                }
+            }
+        }
+    }
+}

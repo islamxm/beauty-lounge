@@ -73,4 +73,43 @@
             
         }
     }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 80px;
+
+        &_wr {
+            background-color: #fff;
+            padding: 0 65px;
+            position: relative;
+            z-index: 10;
+        }
+
+
+        &:after {
+            position: absolute;
+            content: '';
+            height: 1px;
+            top: calc(50% - 0.5px);
+            left: 0;
+            width: 100%;
+            background-color: $brown;
+        }
+        &_btn {
+            background-color: $brown;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 55px;
+
+            &_text {
+                font-size: 16px;
+                margin-left: 15px;
+            }
+        }
+    }
 }
